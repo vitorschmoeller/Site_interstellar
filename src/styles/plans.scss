@@ -1,0 +1,68 @@
+@use 'variaveis';
+
+.plans {
+    padding: 5.6vw;
+    
+    
+    h2 {
+        text-align: center;
+        font-weight: 700;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+
+        @media (max-width: 768px) {
+            display: block
+            ;
+        }
+        
+
+        &__item {
+            padding: 60px 44px 44px;
+            text-align: center;
+            max-width: 350px;
+            width: 100%;
+            
+            button {
+                position: relative;
+                display: inline-block;
+                margin-right: 10px;
+                
+                color: variaveis.$corBranco;
+                padding: 6px 20px;
+                text-decoration: none;
+                font-weight: 500;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                transition: 0.5s;
+                background: rgba(0,0,0,0.5);
+                border: 1px solid rgba(255, 255,255,0.2);
+                cursor: pointer;
+
+                &:hover {
+                    background: variaveis.$corHover;
+                    transition: 0.5s;
+                }
+            }
+            
+            p{
+                margin: 16px 0;
+            }
+
+            &:nth-child(2) {
+            background-image: url(../../dist/images/fundo_combo_plus.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            
+            }
+
+            img{
+                width: 250px;
+                height: 70px;
+                margin-bottom: 1em;
+            }
+        }
+    }
+}

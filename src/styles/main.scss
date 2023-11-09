@@ -1,0 +1,55 @@
+@use 'variaveis';
+@use 'hero';
+@use 'header';
+@use 'shows';
+@use 'plans';
+@use 'faq';
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Bold.woff2);
+    font-weight: 700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: variaveis.$corDeFundo;
+    font-family: 'Popins', sans-serif;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+}
+
+@mixin title($fontSize: 36px) {
+    @include text($fontSize);
+    color: variaveis.$corTextoSecundario
+}
+
+.text {
+    @include text();
+    color: variaveis.$corTextoPrincipal;
+}
+
+.title {
+    @include title();
+    
+}
+
+.link-text {
+    @include text();
+    color: variaveis.$corTextoSecundario;
+    text-decoration: underline;
+}

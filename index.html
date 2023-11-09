@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landingpage interstellar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100;200;300;400;500;700;800;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/main.css">
+
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="header__logo">Interstellar</a>
+        <nav>
+            <ul class="header__list">
+                <li class="header__list__links">
+                    <a href=""><i class="fa-solid fa-earth-americas"></i></a></li>
+                <li class="header__list__links">
+                    <a href="">About</a>
+                </li>
+                <li class="header__list__links">
+                    <a href="">Moments</a>
+                </li>
+                <li class="header__list__links">
+                    <a href="">Carousel</a>
+                </li>
+                <li class="header__list__links">
+                    <a href="">Faq</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="audio">
+            <audio id="myAudio" controls style="display: none;">
+                <source type="audio/mp3" src="./audio/SnapInsta.io - Interstellar Main Theme - Hans Zimmer (128 kbps).mp3">
+            </audio>
+            <button id="playButton" onclick="togglePlay()"><i class="fa-solid fa-play"></i>Play</button>
+        </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="overlay">
+            <div class="hero__content">
+            <div class="hero__content__branding">
+                <img src="./dist/images/posters/poster2.png" alt="">
+            </div>
+            <h3 class="title">Sinopse<i class="fa-solid fa-earth-americas"></i></h3>
+            <h4>
+                <span>2014</span><span><i>12+</i></span><span>2h 58</span><span>Fiction</span>
+            </h4>
+            <p class="text">
+                Em um futuro distante, os recursos naturais da Terra estão diminuindo e a humanidade deverá migrar para outros planetas. Para encontrar um novo lar, o astronauta Joseph Cooper (Matthew McConaughey) deixa sua família no planeta para viajar pelo espaço sem muitas certezas de voltar para casa. É nessa aventura espacial que o protagonista e um grupo de exploradores começam a usar um buraco negro recém-descoberto para realizar viagens, um feito jamais realizado antes por humanos.
+            </p>
+            <div class="hero__content__button">
+                <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
+                <a href="#"><i class="fa-solid fa-plus"></i>My List</a>
+            </div>
+        </div>
+        <ul class="social">
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+    </div>
+    </section>
+    <section class="shows">
+        <nav class="shows__tabs">
+            <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">
+                WALlpaper
+            </button>
+            <button data-tab-button="mais_filmes" class="shows__tabs__button">
+                posters
+            </button>
+            <button data-tab-button="hbomax" class="shows__tabs__button">
+                HBOMAX
+            </button>
+        </nav>
+        <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
+            <li class="shows__list__item">
+                <img src="../dist/images/hero3.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="../dist/images/hero3.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="../dist/images/hero3.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="../dist/images/hero3.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="../dist/images/hero3.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="../dist/images/hero3.jpg" alt="">
+            </li>
+        </ul>
+        <ul data-tab-id="mais_filmes" class="shows__list ">
+            <li class="shows__list__item">
+                <img src="./dist/images/hero2.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/hero2.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/hero2.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/hero2.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/hero2.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/hero2.jpg" alt="">
+            </li>
+        </ul>
+        <ul data-tab-id="hbomax" class="shows__list ">
+            <li class="shows__list__item">
+                <img src="./dist/images/Hero_interstellar.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/Hero_interstellar.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/Hero_interstellar.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/Hero_interstellar.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/Hero_interstellar.jpg" alt="">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/Hero_interstellar.jpg" alt="">
+            </li>
+        </ul>
+    </section>
+    <section class="plans">
+        <h2 class="title">Escolha seu plano</h2>
+        <ul class="plans__list">
+            <li class="plans__list__item">
+                <img src="dist/images/Star+_logo.svg.png" alt="">
+                <br>
+                <strong class="title">*27,99R$</strong>
+                <p class="text">Assista os melhores filmes com nossos planos</p>
+                <button type="button">Assine agora</button>
+            </li>
+            <li class="plans__list__item">
+                <img src="dist/images/Star+_logo.svg.png" alt="">
+                <br>
+                <strong class="title">*27,99R$</strong>
+                <p class="text">Assista os melhores filmes com nossos planos</p>
+                <button type="button">Assine agora</button>
+            </li>
+            <li class="plans__list__item">
+                <img src="dist/images/Star+_logo.svg.png" alt="">
+                <br>
+                <strong class="title">*27,99R$</strong>
+                <p class="text">Assista os melhores filmes com nossos planos</p>
+                <button type="button">Assine agora</button>
+            </li>
+        </ul>
+    </section>
+    <section class="faq">
+        <h2 class="title">Perguntas</h2>
+        <ul class="faq__questions">
+            <li class="faq__questions__item faq__questions__item--is-open">
+                <div class=" faq__questions__item__question" data-faq-question>
+                    Pergunta?
+                </div>
+                <div class="faq__questions__item__answer text">
+                    Resposta
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class=" faq__questions__item__question" data-faq-question>
+                    Pergunta?
+                </div>
+                <div class="faq__questions__item__answer text">
+                    Resposta
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class=" faq__questions__item__question" data-faq-question>
+                    Pergunta?
+                </div>
+                <div class="faq__questions__item__answer text">
+                    Resposta
+                </div>
+            </li>
+        </ul>
+    </section>
+    <script src="./src/scripts/main.js"></script>
+</body>
+</html>
